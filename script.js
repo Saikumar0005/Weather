@@ -2,7 +2,7 @@ function getWeather() {
     const cityname = document.getElementById('city-name').value;
     const apiKey = 'ENTER THE APIKEY';
     const baseURL = 'ENTER THE URL';
-    const completeURL = `${baseURL}${cityname}&appid=${apiKey}&units=metric`; // Using 'metric' to get temperature in Celsius
+    const completeURL = `${baseURL}${cityname}&appid=${apiKey}&units=metric`; 
   
     fetch(completeURL)
       .then(response => response.json())
