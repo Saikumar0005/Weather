@@ -1,7 +1,7 @@
 function getWeather() {
     const cityname = document.getElementById('city-name').value;
-    const apiKey = '7040ea904442a45d6950ba584410ce59';
-    const baseURL = 'https://api.openweathermap.org/data/2.5/weather?q=';
+    const apiKey = 'ENTER THE APIKEY';
+    const baseURL = 'ENTER THE URL';
     const completeURL = `${baseURL}${cityname}&appid=${apiKey}&units=metric`; // Using 'metric' to get temperature in Celsius
   
     fetch(completeURL)
